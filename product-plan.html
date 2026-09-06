@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyRealProduct Training App Plan</title>
+  <style>
+    :root{--ink:#111;--paper:#fffaf0;--white:#fff;--pink:#f58abe;--blue:#78c9ee;--yellow:#ffd15a;--green:#92da75;--muted:#665f55}
+    *{box-sizing:border-box} body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,sans-serif;background-color:var(--paper);background-image:radial-gradient(#d8d0c0 1px,transparent 1px);background-size:14px 14px}
+    main{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:34px 0 70px}.hero{display:grid;grid-template-columns:1.5fr .5fr;gap:28px;align-items:end;border-bottom:4px solid var(--ink);padding-bottom:26px}
+    h1,h2,h3,p{margin:0} h1{font-size:clamp(44px,7vw,84px);line-height:.9;letter-spacing:-.06em;text-transform:uppercase;max-width:850px} h2{font-size:30px;letter-spacing:-.035em;margin-bottom:8px} h3{font-size:18px;line-height:1.15} p{line-height:1.55}.lead{font-size:18px;max-width:820px;margin-top:18px}.label{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:6px 12px;font-weight:900;text-transform:uppercase}.panel{background:var(--white);border:3px solid var(--ink);border-radius:14px;padding:20px}.hero .panel{background:var(--pink);font-size:20px;font-weight:850}.muted{color:var(--muted)}
+    nav{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 34px}button{font:inherit;font-weight:850;border:3px solid var(--ink);background:var(--white);padding:10px 15px;border-radius:8px;cursor:pointer}button.active{background:var(--ink);color:white}.view{display:none}.view.active{display:block}.section{margin-top:38px}.grid{display:grid;gap:16px}.four{grid-template-columns:repeat(4,1fr)}.three{grid-template-columns:repeat(3,1fr)}.two{grid-template-columns:repeat(2,1fr)}
+    .block{min-height:175px;position:relative}.block:nth-child(1){background:var(--pink)}.block:nth-child(2){background:var(--blue)}.block:nth-child(3){background:var(--green)}.block:nth-child(4){background:var(--yellow)}.num{font-size:36px;font-weight:950;line-height:1}.block h3{margin:15px 0 8px;font-size:21px;text-transform:uppercase}.outcome{font-weight:650}.detail{font-size:13px;margin-top:12px}
+    .timeline{border-top:3px solid var(--ink);margin-top:16px}.row{display:grid;grid-template-columns:235px 1fr;gap:20px;padding:15px 4px;border-bottom:2px solid var(--ink)}.row strong{font-size:15px}.list{background:rgba(255,255,255,.72);border-top:3px solid var(--ink)}.item{padding:14px 4px;border-bottom:2px solid var(--ink)}.item p{font-size:14px;color:var(--muted);margin-top:4px}.callout{border:3px solid var(--ink);background:var(--blue);padding:18px 20px;font-weight:700}.callout.yellow{background:var(--yellow)}
+    .entity{font-family:ui-monospace,SFMono-Regular,monospace;background:var(--ink);color:white;padding:20px;border-radius:10px;line-height:1.8}.stack-grid{grid-template-columns:repeat(4,1fr)}.mini{background:white;border:3px solid var(--ink);padding:14px;border-radius:10px}.mini small{display:block;color:var(--muted);font-weight:800;text-transform:uppercase;margin-bottom:6px}.avoid{background:var(--pink)}.phase{display:grid;grid-template-columns:180px 1fr 300px;gap:20px;padding:17px 4px;border-top:2px solid var(--ink)}.phase:last-child{border-bottom:2px solid var(--ink)}.phase b{font-size:15px}.confirmed{background:var(--green)}
+    @media(max-width:850px){.hero,.two{grid-template-columns:1fr}.four,.three,.stack-grid{grid-template-columns:repeat(2,1fr)}.phase{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:5px}}
+    @media(max-width:540px){.four,.three,.stack-grid{grid-template-columns:1fr}h1{font-size:44px}}
+  </style>
+</head>
+<body><main>
+  <section class="hero"><div><span class="label">MyRealProduct · Plan v1.1</span><h1>Build one product, one layer at a time.</h1><p class="lead">A personalized four-week coaching workspace where every lesson is a building block, every Saturday is a checkpoint, and every submission becomes visible progress.</p></div><div class="panel">MVP success: Hari can see who is stuck in under 30 seconds; a learner always knows the next action.</div></section>
+  <nav><button class="active" data-view="journey">Learner journey</button><button data-view="product">Product & data</button><button data-view="delivery">Build sequence</button></nav>
+
+  <section id="journey" class="view active">
+    <section><h2>The four-block build</h2><p class="muted">One capstone continues through all four weeks—not four unrelated demos.</p><div class="grid four section">
+      <article class="panel block"><div class="num">01</div><h3>Ship a working AI app</h3><p class="outcome">A useful AI product at a live URL</p><p class="detail">Prompting · one model API · Python/FastAPI · deployment</p></article>
+      <article class="panel block"><div class="num">02</div><h3>Ground it in real data</h3><p class="outcome">The product answers from chosen documents</p><p class="detail">Embeddings · chunking · retrieval · Supabase vector store</p></article>
+      <article class="panel block"><div class="num">03</div><h3>Make it take action</h3><p class="outcome">The product completes a multi-step workflow</p><p class="detail">LangGraph · tools · state · memory · approvals</p></article>
+      <article class="panel block"><div class="num">04</div><h3>Make it production-ready</h3><p class="outcome">A monitored, evaluated release with a demo</p><p class="detail">Docker · CI/CD · tracing · evals · guardrails</p></article>
+    </div></section>
+    <section class="section"><h2>The weekly rhythm</h2><div class="timeline">
+      <div class="row"><strong>Saturday · required 1:1</strong><p>Review the prior submission, introduce the next outcome, resolve scope questions, and leave with a clear plan.</p></div>
+      <div class="row"><strong>Days 1–2 · learn</strong><p>Complete the required recorded lessons. Optional depth never blocks progress.</p></div>
+      <div class="row"><strong>Day 2/3 · optional office hour</strong><p>Book a 30-minute architecture and ideation session through Cal.com.</p></div>
+      <div class="row"><strong>Days 3–6 · build</strong><p>Follow a small implementation checklist, log blockers, and update the product.</p></div>
+      <div class="row"><strong>Before Saturday · submit</strong><p>Send live URL, repository URL, written reflection and blockers. Hari reviews against the rubric.</p></div>
+    </div></section>
+    <section class="grid two section"><div><h2>Learner app</h2><div class="list">
+      <div class="item"><h3>Home / Today</h3><p>One next action, Saturday countdown, progress build and coach feedback.</p></div><div class="item"><h3>My Build</h3><p>Capstone brief, live URL, repo URL and its four assembled layers.</p></div><div class="item"><h3>Week workspace</h3><p>Orientation, lessons, optional depth, checklist, booking and submission.</p></div><div class="item"><h3>Feedback</h3><p>Rubric result, coach notes and resubmission.</p></div>
+    </div></div><div><h2>Admin app</h2><div class="list">
+      <div class="item"><h3>Cohort dashboard</h3><p>Learners grouped by week, risk status, last activity and overdue work.</p></div><div class="item"><h3>Learner detail</h3><p>Goals, path, completions, submissions, feedback and coach notes.</p></div><div class="item"><h3>Program builder</h3><p>Reusable weeks, lessons, links, tasks, rubrics and optional blocks.</p></div><div class="item"><h3>Review queue</h3><p>New submissions, revisions and overdue reviews.</p></div>
+    </div></div></section>
+    <div class="callout section">Personalization changes the learner’s capstone, starting week, optional blocks, deadlines and feedback—not the entire curriculum structure.</div>
+  </section>
+
+  <section id="product" class="view">
+    <section><h2>Access and unlocking</h2><div class="grid three section"><article class="panel"><h3>Visible roadmap</h3><p class="muted">All four outcomes are visible from day one.</p></article><article class="panel"><h3>Locked contents</h3><p class="muted">Future lessons and tasks stay hidden behind a useful preview.</p></article><article class="panel"><h3>Flexible release</h3><p class="muted">Hari releases per learner or schedules release after Saturday.</p></article></div></section>
+    <section class="section"><h2>Scheduling design</h2><div class="grid two"><article class="panel confirmed"><h3>Cal.com owns booking</h3><p>Connect Hari’s Google Calendar and Google Meet. Use a private 60-minute Saturday Checkpoint event and 30-minute weekday Office Hour event. Cal.com generates a unique Meet link.</p></article><article class="panel"><h3>The app owns the experience</h3><p>Embed booking, show learner-local times, booked state, reschedule/cancel controls and Meet join button. Webhooks sync the booking into Neon.</p></article></div></section>
+    <section class="section"><h2>Recommended stack</h2><div class="grid stack-grid"><div class="mini"><small>App</small>Next.js + TypeScript</div><div class="mini"><small>UI</small>Tailwind + custom editorial components</div><div class="mini"><small>Data</small>Neon Postgres + Drizzle</div><div class="mini"><small>Auth</small>Clerk admin / learner roles</div><div class="mini"><small>Deploy</small>Vercel</div><div class="mini"><small>Scheduling</small>Cal.com + Google Meet</div><div class="mini"><small>Video</small>Hosted video URLs first</div><div class="mini"><small>Submission</small>URLs + written responses</div></div></section>
+    <section class="section"><h2>Core database entities</h2><div class="entity">User → Enrollment → ProgramVersion → Week → Section → ContentBlock<br>Enrollment → WeekRelease · BlockProgress · Attendance · CoachNote<br>Enrollment + Week → Submission → SubmissionVersion → Feedback + RubricScore<br>Enrollment → Booking → Cal.com UID · UTC time · Meet URL · status</div></section>
+    <section class="grid two section"><div><h2>Visual direction</h2><p>Use the reference’s cream dotted paper, heavy black display type, thick outlines, clipped editorial panels, and restrained pink, blue, yellow and green accents. Blocks physically stack as progress grows.</p></div><div class="panel avoid"><h3>Avoid</h3><p>Generic LMS styling, a toy-like Lego clone, heavy 3D, points, leaderboards, decorative motion and endless identical cards.</p></div></section>
+  </section>
+
+  <section id="delivery" class="view">
+    <section><h2>Four implementation slices</h2><div class="section">
+      <div class="phase"><b>1 · Foundation</b><p>App shell, design system, auth, Neon schema, seeded curriculum and role routes.</p><p><b>Done:</b> learner and admin see different shells.</p></div>
+      <div class="phase"><b>2 · Learner loop</b><p>Home, roadmap, locks, week workspace, progress, capstone and submission.</p><p><b>Done:</b> Week 1 works end-to-end.</p></div>
+      <div class="phase"><b>3 · Coach loop</b><p>Dashboard, learner detail, releases, review queue, rubric feedback and resubmission.</p><p><b>Done:</b> Hari can run a full weekly cycle.</p></div>
+      <div class="phase"><b>4 · Operations</b><p>Invites, staggered starts, timezones, Cal.com embed/webhooks, reminders and risk states.</p><p><b>Done:</b> multiple learners work without spreadsheets.</p></div>
+    </div></section>
+    <section class="grid two section"><article class="panel"><h2>Build now</h2><p>Authentication, roles, content, progress, locks, URL/text submissions, feedback, admin overview, staggered schedules, and Cal.com with Google Meet.</p></article><article class="panel"><h2>Later</h2><p>AI coach, coding sandbox, native video/files, community, billing, certificates, quizzes, leaderboards, 3D blocks and advanced analytics.</p></article></section>
+    <section class="section"><h2>Curriculum adjustments</h2><div class="grid two"><article class="panel"><h3>Add Week 0</h3><p>Intake, baseline, capstone choice, setup, availability and fallback ideas.</p></article><article class="panel"><h3>Reduce Week 1 breadth</h3><p>Require one model API; make Claude/Gemini comparison optional.</p></article><article class="panel"><h3>Keep one product</h3><p>Every week adds a layer to one coherent portfolio project.</p></article><article class="panel"><h3>Move AWS to stretch</h3><p>Require Docker, CI/CD, tracing and evals; keep AWS optional.</p></article></div></section>
+    <div class="callout confirmed section">Confirmed: Saturday calls are one-to-one via Cal.com + unique Google Meet links; deadlines use each learner’s timezone; submissions are URLs and written responses.</div>
+  </section>
+</main><script>
+  const buttons=[...document.querySelectorAll('nav button')];
+  buttons.forEach(button=>button.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));button.classList.add('active');document.getElementById(button.dataset.view).classList.add('active')}));
+</script></body></html>
