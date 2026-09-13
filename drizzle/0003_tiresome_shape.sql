@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX "feedback_submission_unique" ON "feedback" USING btree ("submission_id");

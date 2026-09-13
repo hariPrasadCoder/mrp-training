@@ -1,6 +1,19 @@
 export type Role = "learner" | "admin";
 export type ReleaseState = "locked" | "available" | "credited" | "completed";
-export type ContentKind = "video" | "text" | "link" | "checklist" | "booking" | "submission";
+export type ContentKind =
+  "video" | "text" | "link" | "checklist" | "booking" | "submission";
+export type EnrollmentState =
+  "invited" | "onboarding" | "active" | "paused" | "completed";
+
+export type ProgramWeek = {
+  id: string;
+  weekNumber: number;
+  eyebrow: string;
+  title: string;
+  outcome: string;
+  accent: "pink" | "blue" | "green" | "yellow" | "coral";
+  sortOrder: number;
+};
 
 export type LessonBlock = {
   id: string;
@@ -8,7 +21,12 @@ export type LessonBlock = {
   type: ContentKind;
   title: string;
   description: string;
-  content: { videoId?: string; url?: string; body?: string; durationMinutes?: number };
+  content: {
+    videoId?: string;
+    url?: string;
+    body?: string;
+    durationMinutes?: number;
+  };
   required: boolean;
   sortOrder: number;
   published: boolean;
@@ -26,10 +44,32 @@ export type LearnerWorkspaceData = {
   completedChecklist: string[];
   completedBlocks: string[];
   enrollmentId: string;
+  status: EnrollmentState;
   currentWeek: number;
-  releases: Array<{ weekNumber: number; status: ReleaseState; dueAt: string | null }>;
-  submissions: Array<{ id: string; weekNumber: number; status: string; liveUrl: string | null; repositoryUrl: string | null; reflection: string | null; blocker: string | null; submittedAt: string | null }>;
-  feedback: Array<{ submissionId: string; result: string; summary: string; createdAt: string }>;
+  capstoneTitle: string;
+  capstoneProblem: string;
+  capstoneOutcome: string;
+  releases: Array<{
+    weekNumber: number;
+    status: ReleaseState;
+    dueAt: string | null;
+  }>;
+  submissions: Array<{
+    id: string;
+    weekNumber: number;
+    status: string;
+    liveUrl: string | null;
+    repositoryUrl: string | null;
+    reflection: string | null;
+    blocker: string | null;
+    submittedAt: string | null;
+  }>;
+  feedback: Array<{
+    submissionId: string;
+    result: string;
+    summary: string;
+    createdAt: string;
+  }>;
 };
 
 export type AdminLearner = {
@@ -43,7 +83,12 @@ export type AdminLearner = {
   currentWeek: number;
   currentDueAt: string;
   enrollmentId: string;
+  status: EnrollmentState;
   completedItems: number;
+  capstoneTitle: string;
+  capstoneProblem: string;
+  capstoneOutcome: string;
+  notes: Array<{ id: string; body: string; createdAt: string }>;
 };
 
 export type ReviewItem = {

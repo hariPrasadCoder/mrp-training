@@ -1,0 +1,284 @@
+       MY REAL
+       PRODUCT                                                                                                                    HI, SUMIT.
+
+
+
+
+AI ENGINEERING
+COACHING OPTIONS                                                                                             4 WEEKS. 1:1.
+                                                                                                             BUILD. REVIEW. SHIP.
+
+Choose the learning path that matches the depth of guidance you want. Both options are                       A focused engagement built around
+                                                                                                             one capstone.
+delivered one-to-one and lead to one demonstrable AI product.
+
+
+
+
+   OPTION 01 / STANDARD                                                     OPTION 02 / ADVANCED
+
+
+   AI PRODUCT BUILDER                                                       ADVANCED AI ENGINEERING
+   $2,000                                       4-WEEK PROGRAMME            $3,000                                              RECOMMENDED
+
+
+
+
+   THE PROVEN ONE-TO-ONE BUILD PATH                                         EVERYTHING IN OPTION 01, PLUS
+
+      Four weekly Saturday coaching sessions                                   A learning path adapted to your existing experience
+
+      Weekly one-to-one office hours                                           Three additional 60-minute advanced sessions
+
+      Recorded lessons and implementation resources                            Advanced RAG, retrieval evaluation and reranking
+
+      Build an AI app, add RAG, create a LangGraph agent                       Advanced LangGraph and reliable agent architecture
+
+      Add evaluations, observability and production checks                     Production AI engineering, evaluations and LLMOps
+
+      One production-oriented capstone and final review                        Curated technical references and next-step roadmap
+
+      Standard MyRealProduct curriculum and sequence                           Deeper architecture and code feedback on your capstone
+
+
+
+
+     BEST FOR                                                                 BEST FOR
+
+     A structured journey through the complete AI product                     An experienced data professional ready to self-build with
+     lifecycle.                                                               senior guidance.
+
+
+
+
+   OUR RECOMMENDATION
+   Based on your existing RAG and agent experience, Option 02 avoids repeating familiar foundations and adds focused depth where it
+   matters: retrieval quality, LangGraph architecture and production reliability.
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                                PAGE 1 OF 3
+        MY REAL
+        PRODUCT                                                                                                                                    OPTION 01 / $2,000
+
+
+
+
+STANDARD TRAINING PLAN
+THE PROVEN FOUR-WEEK, ONE-TO-ONE AI PRODUCT BUILDER PROGRAMME.
+
+
+
+
+  BEFORE WE START                Join the WhatsApp group / Confirm the capstone problem
+
+
+  WEEK 0                         Research existing solutions / Submit your understanding / Confirm your setup
+
+
+
+
+                 FOUNDATION                                                                                KNOWLEDGE
+
+
+      01         SHIP YOUR AI APP                                                               02         GROUND IT WITH RAG
+                 Outcome: working MVP at a live URL                                                        Outcome: answers from trusted source data
+
+
+
+
+  LEARN / FOCUS                                                                             LEARN / FOCUS
+
+  AI-assisted coding | FastAPI | LangChain | Supabase | GitHub | Deployment                 Embeddings | Chunking | Vector stores | Retrieval | Citations | RAG patterns
+
+
+                                Scope the product, user flow and MVP.                                                    Plan sources, retrieval and quality goals.
+     PLAN       SATURDAY                                                                       PLAN      SATURDAY
+
+
+                                Learn coding workflow, FastAPI and LangChain.                                            Learn RAG foundations and embeddings.
+    LEARN       SUNDAY                                                                         LEARN     SUNDAY
+
+
+                                Learn Supabase, GitHub and deployment.                                                   Learn vector stores and retrieval patterns.
+    LEARN       MONDAY                                                                         LEARN     MONDAY
+
+
+                                Agree architecture and unblock questions.                                                Choose chunking, metadata and retrieval.
+    COACH       TUESDAY                                                                        COACH     TUESDAY
+
+
+                                Scaffold the application and model flow.                                                 Build ingestion, chunks and indexing.
+     BUILD      WEDNESDAY                                                                      BUILD     WEDNESDAY
+
+
+                                Connect data, frontend and core workflow.                                                Add retrieval, generation and citations.
+     BUILD      THURSDAY                                                                       BUILD     THURSDAY
+
+
+                                Deploy, test and submit the first release.                                               Test weak answers and submit the RAG build.
+     BUILD      FRIDAY                                                                         BUILD     FRIDAY
+
+
+
+
+                 ACTION                                                                                    PRODUCTION
+
+
+      03         ADD AN AI AGENT                                                                04         MAKE IT RELIABLE
+                 Outcome: a reliable multi-step workflow                                                   Outcome: a monitored, evaluated release
+
+
+
+
+  LEARN / FOCUS                                                                             LEARN / FOCUS
+
+  AI agents | Tools | LangGraph | State | Routing | Failure handling                        Observability | Evaluations | LLMOps | Tracing | Caching | Prompt versions
+
+
+                                Define the goal, workflow and boundaries.                                                Set eval criteria and release checklist.
+     PLAN       SATURDAY                                                                       PLAN      SATURDAY
+
+
+                                Learn agent foundations and tool calling.                                                Learn tracing and evaluation methods.
+    LEARN       SUNDAY                                                                         LEARN     SUNDAY
+
+
+                                Learn graph patterns through an example.                                                 Learn caching and prompt versioning.
+    LEARN       MONDAY                                                                         LEARN     MONDAY
+
+
+                                Map nodes, state, tools and approvals.                                                   Define eval set, tracing and gateway.
+    COACH       TUESDAY                                                                        COACH     TUESDAY
+
+
+                                Create the graph and first working path.                                                 Instrument traces, metrics and logs.
+     BUILD      WEDNESDAY                                                                      BUILD     WEDNESDAY
+
+
+                                Add tools, memory and failure handling.                                                  Add evals, caching and prompt versions.
+     BUILD      THURSDAY                                                                       BUILD     THURSDAY
+
+
+                                Test workflows and submit evidence.                                                      Submit live app, repo, demo and results.
+     BUILD      FRIDAY                                                                         BUILD     FRIDAY
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                                                                  PAGE 2 OF 3
+        MY REAL
+        PRODUCT                                                                                                                                                       OPTION 02 / $3,000
+
+
+
+
+ADVANCED TRAINING PLAN
+THE STANDARD PROGRAMME, ADAPTED TO YOUR EXPERIENCE AND CAPSTONE.
+
+
+
+
+                            TECHNICAL ASSESSMENT / CAPSTONE SELECTION / SUCCESS CRITERIA
+  WEEK 0                    Confirm what to skip, what to deepen and the evidence the final system must demonstrate.
+
+
+
+
+                 FRAME                                                                                                       RETRIEVE
+
+
+     01          ARCHITECTURE BASELINE                                                                            02         ADVANCED RAG
+                 Outcome: a scoped system and benchmark                                                                      Outcome: measurably stronger retrieval
+
+
+
+
+  LEARN / FOCUS                                                                                               LEARN / FOCUS
+
+  System design | Model choices | Structured outputs | Failure modes | Baseline metrics                       Hybrid search | Query transforms | Metadata | Reranking | Compression | RAG evals
+
+
+                               Set scope, architecture and success criteria.
+     PLAN      SATURDAY                                                                                         EXTRA 60-MINUTE SESSION                                                   RAG DEEP DIVE
+
+
+                               Review selected material and close gaps.                                                                     Diagnose retrieval and define eval targets.
+    LEARN      SUNDAY                                                                                            PLAN       SATURDAY
+
+                                                                                                                                            Study hybrid and transformed retrieval.
+                               Study reliability and design trade-offs.                                          LEARN      SUNDAY
+    LEARN      MONDAY
+
+                                                                                                                                            Study reranking and contextual compression.
+                               Review architecture and implementation plan.                                      LEARN      MONDAY
+    COACH      TUESDAY
+                                                                                                                                            Choose the retrieval experiment plan.
+                                                                                                                 COACH      TUESDAY
+                               Build or refactor the working baseline.
+     BUILD     WEDNESDAY
+                                                                                                                                            Implement retrieval and reranking changes.
+                                                                                                                 BUILD      WEDNESDAY
+                               Add initial traces and benchmark cases.
+     BUILD     THURSDAY
+                                                                                                                                            Run retrieval and answer evaluations.
+                                                                                                                 BUILD      THURSDAY
+                               Submit architecture and baseline evidence.
+     BUILD     FRIDAY                                                                                                                       Compare results and submit evidence.
+                                                                                                                 BUILD      FRIDAY
+
+
+
+
+                 ORCHESTRATE                                                                                                 MEASURE
+
+
+     03          RELIABLE LANGGRAPH                                                                               04         PRODUCTION AI
+                 Outcome: an inspectable agent workflow                                                                      Outcome: an evaluated, release-ready system
+
+
+
+
+  LEARN / FOCUS                                                                                               LEARN / FOCUS
+
+  State | Routing | Retries | Fallbacks | Memory | Human approval                                             Eval datasets | Tracing | Versioning | Cost | Latency | Guardrails
+
+
+
+    EXTRA 60-MINUTE SESSION                                           LANGGRAPH DEEP DIVE                       EXTRA 60-MINUTE SESSION                                           PRODUCTION DEEP DIVE
+
+
+                               Define workflow, tools and boundaries.                                                                       Set production criteria and final scope.
+     PLAN      SATURDAY                                                                                          PLAN       SATURDAY
+
+                               Study advanced graph and state patterns.                                                                     Study evaluation and observability design.
+    LEARN      SUNDAY                                                                                            LEARN      SUNDAY
+
+                               Study recovery, memory and approvals.                                                                        Study cost, latency and safety controls.
+    LEARN      MONDAY                                                                                            LEARN      MONDAY
+
+                               Review graph architecture and risks.                                                                         Review LLMOps and release architecture.
+    COACH      TUESDAY                                                                                           COACH      TUESDAY
+
+                               Implement state, routing and tools.                                                                          Implement evals, traces and controls.
+     BUILD     WEDNESDAY                                                                                         BUILD      WEDNESDAY
+
+                               Add retries, fallbacks and checkpoints.                                                                      Run regressions and harden the system.
+     BUILD     THURSDAY                                                                                          BUILD      THURSDAY
+
+                               Test complete paths and failure cases.                                                                       Submit app, repo, demo and eval report.
+     BUILD     FRIDAY                                                                                            BUILD      FRIDAY
+
+
+
+
+   COACHING-LED. YOU BUILD THE SYSTEM.
+   Includes instruction, architecture guidance, curated resources and feedback on your implementation. Extended pair-programming, bespoke lesson
+   development, or implementation by MyRealProduct is scoped separately.
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                                                                                       PAGE 3 OF 3
+

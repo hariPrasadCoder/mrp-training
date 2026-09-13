@@ -5,15 +5,18 @@ Personalised four-week AI engineering training workspace with separate learner a
 ## Included in this build
 
 - Neon Auth email/password sign-up, sign-in, signed sessions, and protected app route
-- Neon Postgres schema for roles, programs, content, enrollments, releases, progress, submissions, feedback, bookings, and coach notes
+- Neon Postgres schema for roles, programs, content, enrollments, releases, progress, submissions, feedback, and coach notes
 - First-login learner intake and a persistent Week 0 onboarding checklist
 - Learner views for Today, released lesson content, build submissions, and coach feedback
 - Admin content authoring for YouTube videos, written lessons, tasks, resources, bookings, and submission instructions
 - Admin learner access controls, local-time deadlines, WhatsApp invites, scheduling settings, and real submission reviews
+- Editable week framing, ordered content blocks, learner pause/resume/completion controls, private coach notes, and learner product briefs
+- Simple Cal.com booking cards for Saturday checkpoints and Tuesday office hours
+- Password-reset UI, mutation rate limiting, security headers, and automated tests
 - Responsive editorial interface based on the supplied visual reference
 - Standalone Docker build and health endpoint for Coolify
 
-Authenticated views use Neon data throughout. New non-admin accounts become learners automatically; only emails in `ADMIN_EMAILS` receive coach access. Unpublished content and locked weeks are never shown as fake lessons.
+Authenticated views use Neon data throughout. Access is invitation-only: emails in `LEARNER_EMAILS` become learners and emails in `ADMIN_EMAILS` receive coach access. All other emails are denied. Unpublished content and locked weeks are never shown as fake lessons.
 
 ## Local development
 
@@ -30,12 +33,14 @@ Copy `.env.example` to `.env.local` and configure:
 
 - `DATABASE_URL`: pooled Neon Postgres connection
 - `NEON_AUTH_BASE_URL`: Neon Auth endpoint
-- `NEON_AUTH_JWKS_URL`: Neon Auth JWKS endpoint
 - `NEON_AUTH_COOKIE_SECRET`: at least 32 random characters
 - `ADMIN_EMAILS`: comma-separated email addresses that receive the admin role
-- `CALCOM_WEBHOOK_SECRET`: used when booking synchronization is enabled
+- `LEARNER_EMAILS`: comma-separated invited learner email addresses
 
-The supplied credentials are stored only in `.env.local`, which is excluded from Git. Rotate the database password before production because it was shared through chat.
+Authentication passwords are managed by Neon Auth and must never be added to
+the repository or environment files. `.env.local` is excluded from Git. Rotate
+the database password and cookie secret before production if either has been
+shared outside the deployment platform.
 
 ## Scheduling links
 
@@ -44,7 +49,17 @@ Sign in with an email listed in `ADMIN_EMAILS`, open **Admin view → Scheduling
 - **MRP Saturday Checkpoint** — 60 minutes, mandatory, one-to-one
 - **MRP Office Hour** — 30 minutes, optional, one-to-one
 
-Saving writes the links to Neon and updates the learner booking buttons. Keep both event types hidden in Cal.com; direct links still work. Configure Google Meet as the event location inside Cal.com.
+Saving writes the links to Neon and updates the two learner booking cards. Each card opens Cal.com in a new tab. Cal.com handles confirmation emails, reminders, rescheduling, cancellation, and the Google Meet link.
+
+## Verification
+
+```bash
+npm run test
+npm run lint
+npm run build
+```
+
+The automated test suite validates the course structure, invitation allowlist, and request rate limiting.
 
 ## Database
 
@@ -61,12 +76,13 @@ Use **Unlisted** YouTube videos with embedding enabled. Truly Private YouTube vi
 
 ## Coolify
 
-1. Create an Application from this Git repository.
-2. Select **Dockerfile** as the build pack.
-3. Expose port `3000`.
-4. Add the production environment variables from `.env.example` in Coolify; never commit `.env.local`.
-5. Set the health check path to `/api/health`.
-6. Attach the production domain and deploy.
+The Docker image is a minimal standalone Next.js server that runs as a non-root user on port `3000`. Its built-in health check calls `/api/health` and verifies that all required runtime variables are present.
+
+Use the private, Git-ignored `coolify.env` file for the values to paste into Coolify. The complete deployment walkthrough is in [`docs/coolify-deployment.md`](docs/coolify-deployment.md).
+
+Before opening enrollment, also complete the launch configuration in the admin
+workspace: add the learner's private WhatsApp invite, add the two Cal.com event
+links, publish the Week 1 material, and set the learner's Week 0 deadline.
 
 The standalone Next.js server listens on `0.0.0.0:3000`, as required for Coolify proxy routing.
 

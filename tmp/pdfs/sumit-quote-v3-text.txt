@@ -1,0 +1,245 @@
+       MY REAL
+       PRODUCT                                                                                                                    HI, SUMIT.
+
+
+
+
+AI ENGINEERING
+COACHING OPTIONS                                                                                            4 WEEKS. 1:1.
+                                                                                                            BUILD. REVIEW. SHIP.
+
+Choose the learning path that matches the depth of guidance you want. Both options are                      A focused engagement built around
+                                                                                                            one capstone.
+delivered one-to-one and lead to one demonstrable AI product.
+
+
+
+
+   OPTION 01 / STANDARD                                                    OPTION 02 / ADVANCED
+
+
+   AI PRODUCT BUILDER                                                      ADVANCED AI ENGINEERING
+   $2,000                                       4-WEEK PROGRAMME           $3,000                                             RECOMMENDED
+
+
+
+
+   THE PROVEN ONE-TO-ONE BUILD PATH                                        EVERYTHING IN OPTION 01, PLUS
+
+      Four weekly Saturday coaching sessions                                   The same core curriculum and recorded lessons as Option 01
+
+      Weekly one-to-one office hours                                           Three additional 60-minute advanced sessions
+
+      Recorded lessons and implementation resources                            Advanced RAG, retrieval evaluation and reranking
+
+      Build an AI app, add RAG, create a LangGraph agent                       Advanced LangGraph and reliable agent architecture
+
+      Add evaluations, observability and production checks                     Production AI engineering, evaluations and LLMOps
+
+      One production-oriented capstone and final review                        Curated technical references and next-step roadmap
+
+      Standard MyRealProduct curriculum and sequence                           Deeper architecture and code feedback on your capstone
+
+
+
+
+     BEST FOR                                                                 BEST FOR
+
+     A structured journey through the complete AI product                     An experienced data professional ready to self-build with
+     lifecycle.                                                               senior guidance.
+
+
+
+
+   OUR RECOMMENDATION
+   Based on your existing RAG and agent experience, Option 02 lets you move selectively through familiar foundations and adds coaching
+   depth where it matters: retrieval quality, LangGraph architecture and production reliability.
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                               PAGE 1 OF 3
+        MY REAL
+        PRODUCT                                                                                                                                         OPTION 01 / $2,000
+
+
+
+
+STANDARD TRAINING PLAN
+THE PROVEN FOUR-WEEK, ONE-TO-ONE AI PRODUCT BUILDER PROGRAMME.
+
+
+
+
+  BEFORE WE START              Join the WhatsApp group / Pick and understand a problem statement
+
+
+  WEEK 0                       Research existing solutions / Submit your understanding report / Set up Python, Claude Code and GitHub
+
+
+
+
+                FOUNDATION                                                                                       KNOWLEDGE
+
+
+     01         SHIP YOUR AI APP                                                                      02         GROUND IT WITH RAG
+                Outcome: working MVP at a live URL                                                               Outcome: answers from trusted source data
+
+
+
+
+  LEARN / FOCUS                                                                                    LEARN / FOCUS
+
+  Claude Code | LangChain | GitHub | FastAPI | Supabase | Vercel                                   Intro to RAG | Pinecone | Advanced RAG | Vector stores | Types of RAG
+
+
+                              Intro, solution, MVP, flowchart, Q&A and timeline.                                               RAG architecture, sources, retrieval quality, MVP upgrade and
+     PLAN      SATURDAY                                                                               PLAN      SATURDAY       Q&A.
+
+                              Learn Claude Code, FastAPI and LangChain.                                                        Learn RAG foundations, embeddings, chunking and vector stores.
+    LEARN      SUNDAY                                                                                LEARN      SUNDAY
+
+
+                              Learn Supabase, GitHub and Vercel; see the full stack fit                                        Learn Pinecone, RAG patterns and advanced retrieval through a
+    LEARN      MONDAY         together.
+                                                                                                     LEARN      MONDAY         guided build.
+
+                              Ideate the build, agree scope and architecture, unblock questions.                               Choose sources, chunking strategy, metadata and retrieval
+    COACH      TUESDAY                                                                               COACH      TUESDAY        approach.
+
+                              Scaffold the app, API and first model flow.                                                      Build document ingestion, chunking and vector indexing.
+     BUILD     WEDNESDAY                                                                              BUILD     WEDNESDAY
+
+
+                              Connect data, frontend and core product flow.                                                    Build retrieval, grounded generation and citations.
+     BUILD     THURSDAY                                                                               BUILD     THURSDAY
+
+
+                              Build, deploy and submit by end of day.                                                          Test retrieval quality, improve weak answers and submit.
+     BUILD     FRIDAY                                                                                 BUILD     FRIDAY
+
+
+
+
+                ACTION                                                                                           PRODUCTION
+
+
+     03         ADD AN AI AGENT                                                                       04         MAKE IT RELIABLE
+                Outcome: a reliable multi-step workflow                                                          Outcome: a monitored, evaluated release
+
+
+
+
+  LEARN / FOCUS                                                                                    LEARN / FOCUS
+
+  AI agents | Tools | Advanced LangGraph | LangGraph | Graph patterns                              Observability | Evaluations | LLMOps | Langfuse/LangSmith | LiteLLM
+
+
+                              Agent goal, workflow, state, tools, safety boundaries and success                                Production readiness, traces, eval criteria, cost, latency and demo
+     PLAN      SATURDAY       criteria.
+                                                                                                      PLAN      SATURDAY       plan.
+
+                              Learn agent foundations, LangGraph basics and tool calling.                                      Learn observability with Langfuse/LangSmith and practical
+    LEARN      SUNDAY                                                                                LEARN      SUNDAY         evaluations.
+
+                              Learn graph patterns and advanced LangGraph through a guided                                     Learn LiteLLM, prompt caching and prompt versioning through a
+    LEARN      MONDAY         workflow.
+                                                                                                     LEARN      MONDAY         build.
+
+                              Map nodes, state, routing, tools and human approval points.                                      Define eval set, tracing plan, gateway setup and release checklist.
+    COACH      TUESDAY                                                                               COACH      TUESDAY
+
+
+                              Create the graph, state and first working path.                                                  Instrument traces, metrics and production logs.
+     BUILD     WEDNESDAY                                                                              BUILD     WEDNESDAY
+
+
+                              Add tools, routing, memory and failure handling.                                                 Add evals, gateway, caching and prompt versions.
+     BUILD     THURSDAY                                                                               BUILD     THURSDAY
+
+
+                              Test complete workflows, record evidence and submit.                                             Submit live app, GitHub repo, demo, results and reflection.
+     BUILD     FRIDAY                                                                                 BUILD     FRIDAY
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                                                                             PAGE 2 OF 3
+       MY REAL
+       PRODUCT                                                                                                                                OPTION 02 / $3,000
+
+
+
+
+ADVANCED COACHING ADD-ON
+THE SAME TRAINING PLAN AND RECORDED LESSONS. MORE DEPTH IN COACHING.
+
+
+
+
+   WHAT THE EXTRA $1,000 ADDS
+   Three additional 60-minute one-to-one coaching sessions, selected advanced references, and deeper feedback as you apply those concepts to your
+   own capstone. No separate library of advanced recorded lessons is promised.
+
+
+
+
+   WEEK 01                     CORE RECORDED LESSONS - SAME AS OPTION 01
+                                                                                                               HOW THIS WEEK WORKS
+                               Claude Code, LangChain, GitHub, FastAPI, Supabase and Vercel.
+   SHIP YOUR                                                                                                   STANDARD COACHING
+   AI APP                                                                                                      Use the normal Saturday session and Tuesday office hours.
+                                                                                                               Familiar material may be reviewed selectively, but the core
+                                                                                                               programme remains unchanged.
+
+
+
+
+   WEEK 02                     CORE RECORDED LESSONS - SAME AS OPTION 01
+                                                                                                               ADVANCED COACHING ADDITION
+                               Intro to RAG, Pinecone, Advanced RAG, Vector stores and Types of
+   GROUND IT                   RAG.                                                                            + 60-MINUTE DEEP DIVE
+   WITH RAG                                                                                                    Advanced retrieval choices, hybrid search, query
+                                                                                                               transformation, reranking and how to evaluate retrieval
+                                                                                                               quality in the capstone.
+
+
+
+
+   WEEK 03                     CORE RECORDED LESSONS - SAME AS OPTION 01
+                                                                                                               ADVANCED COACHING ADDITION
+                               AI agents, Tools, Advanced LangGraph, LangGraph and Graph patterns.
+   ADD AN AI                                                                                                   + 60-MINUTE DEEP DIVE
+   AGENT                                                                                                       LangGraph architecture, state and routing, retries, fallbacks,
+                                                                                                               memory and human approval - applied as coaching, not a
+                                                                                                               bespoke recorded course.
+
+
+
+
+   WEEK 04                     CORE RECORDED LESSONS - SAME AS OPTION 01
+                                                                                                               ADVANCED COACHING ADDITION
+                               Observability, Evaluations, LLMOps, Langfuse/LangSmith and LiteLLM.
+   MAKE IT                                                                                                     + 60-MINUTE DEEP DIVE
+   RELIABLE                                                                                                    Evaluation strategy, tracing, prompt and model versioning,
+                                                                                                               cost, latency and a production-readiness review of the
+                                                                                                               capstone.
+
+
+
+
+   INCLUDED IN OPTION 02                                                              NOT INCLUDED
+
+      Three extra private coaching sessions                                               A separate advanced recorded curriculum
+
+      Curated references for the three deep dives                                         A bespoke course created for one participant
+
+      Deeper architecture and code feedback                                               Extended pair-programming or live implementation
+
+      Priorities adapted to Sumit's existing knowledge                                    Code written on the participant's behalf
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                                                                PAGE 3 OF 3
+

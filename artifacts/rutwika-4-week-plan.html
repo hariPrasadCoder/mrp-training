@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rutwika · 4-Week AI Product Build</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&display=swap");
+    :root {
+      --ink: #10100f; --paper: #fffaf0; --white: #fffefd; --muted: #625d54;
+      --pink: #f28bbb; --blue: #78c8eb; --green: #98dd76; --yellow: #ffd159;
+      --coral: #ee765e; --soft: #eee8dc;
+    }
+    * { box-sizing: border-box; }
+    *::-webkit-scrollbar { display: none; }
+    html { scrollbar-width: none; }
+    html, body { margin: 0; width: 1200px; min-height: 1920px; color: var(--ink); }
+    body {
+      font-family: "DM Sans", Arial, sans-serif;
+      background-color: var(--paper);
+      background-image: radial-gradient(#d7d0c2 1.2px, transparent 1.2px);
+      background-size: 14px 14px;
+    }
+    main { width: 1200px; min-height: 1920px; padding: 42px 42px 38px; overflow: hidden; }
+    h1, h2, h3, p { margin: 0; }
+    .display { font-family: "Archivo Black", Arial Black, sans-serif; text-transform: uppercase; }
+    .topline { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; gap: 10px; align-items: center; font-size: 14px; line-height: .88; }
+    .brand-mark { width: 38px; height: 38px; display: grid; grid-template-columns: 1fr 1fr; gap: 3px; transform: rotate(-5deg); }
+    .brand-mark i { border: 3px solid var(--ink); background: var(--pink); }
+    .brand-mark i:nth-child(2) { background: var(--blue); }
+    .brand-mark i:nth-child(3) { grid-column: 1 / -1; background: var(--green); }
+    .name-pill { border: 3px solid var(--ink); border-radius: 9px; background: var(--yellow); padding: 9px 15px; font-weight: 800; box-shadow: 5px 5px 0 var(--ink); }
+    header { border-bottom: 4px solid var(--ink); padding: 30px 0 25px; display: grid; grid-template-columns: 1fr 300px; gap: 28px; align-items: end; }
+    h1 { font-size: 67px; line-height: .88; letter-spacing: -.058em; }
+    header p { margin-top: 18px; max-width: 720px; font-size: 17px; line-height: 1.45; font-weight: 600; color: var(--muted); }
+    .promise { border: 3px solid var(--ink); background: var(--pink); border-radius: 13px; padding: 18px; transform: rotate(1.2deg); }
+    .promise b { font-family: "Archivo Black"; display: block; font-size: 23px; line-height: 1.04; margin-bottom: 9px; overflow-wrap: anywhere; }
+    .promise span { font-size: 14px; line-height: 1.35; font-weight: 700; }
+    .week-zero { margin: 24px 0 18px; border: 3px solid var(--ink); border-radius: 13px; background: var(--white); display: grid; grid-template-columns: 152px 1fr; overflow: hidden; box-shadow: 6px 6px 0 var(--ink); }
+    .week-zero .label { background: var(--blue); border-right: 3px solid var(--ink); padding: 17px; display: grid; align-content: center; }
+    .week-zero .label span { font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+    .week-zero .label b { font-family: "Archivo Black"; font-size: 31px; line-height: 1; }
+    .week-zero .tasks { padding: 14px 18px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; align-items: start; }
+    .week-zero .task { font-size: 12px; line-height: 1.32; font-weight: 700; }
+    .week-zero .task em { width: 20px; height: 20px; display: grid; place-items: center; border: 2px solid var(--ink); border-radius: 50%; background: var(--green); font-style: normal; font-size: 10px; margin-bottom: 5px; }
+    .weeks { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .week { border: 3px solid var(--ink); border-radius: 13px; background: var(--white); overflow: hidden; min-height: 603px; box-shadow: 6px 6px 0 var(--ink); }
+    .week-head { min-height: 114px; padding: 16px 18px 14px; border-bottom: 3px solid var(--ink); display: grid; grid-template-columns: 72px 1fr; gap: 13px; align-items: center; }
+    .week:nth-child(1) .week-head { background: var(--pink); }
+    .week:nth-child(2) .week-head { background: var(--blue); }
+    .week:nth-child(3) .week-head { background: var(--green); }
+    .week:nth-child(4) .week-head { background: var(--yellow); }
+    .num { width: 68px; height: 68px; border: 3px solid var(--ink); border-radius: 50%; background: var(--white); display: grid; place-items: center; font-family: "Archivo Black"; font-size: 32px; }
+    .week-head small { display: block; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 3px; }
+    .week-head h2 { font-family: "Archivo Black"; text-transform: uppercase; font-size: 25px; line-height: 1.02; letter-spacing: -.03em; }
+    .outcome { margin-top: 5px; font-size: 12px; font-weight: 800; }
+    .learn { min-height: 112px; padding: 12px 16px; border-bottom: 2px dashed var(--ink); }
+    .learn b { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
+    .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 12px; margin-top: 8px; }
+    .chip { position: relative; padding-left: 15px; font-size: 10px; line-height: 1.15; font-weight: 800; }
+    .chip::before { content: ""; position: absolute; left: 0; top: 1px; width: 8px; height: 8px; border: 1.5px solid var(--ink); border-radius: 50%; background: var(--pink); }
+    .week:nth-child(2) .chip::before { background: var(--blue); }
+    .week:nth-child(3) .chip::before { background: var(--green); }
+    .week:nth-child(4) .chip::before { background: var(--yellow); }
+    .days { padding: 6px 16px 12px; }
+    .day { display: grid; grid-template-columns: 52px 72px 1fr; gap: 8px; padding: 7px 0; border-bottom: 1.5px solid #9d978c; }
+    .day:last-child { border-bottom: 0; }
+    .day b { font-size: 10.5px; text-transform: uppercase; letter-spacing: .04em; }
+    .day span { font-size: 10.7px; line-height: 1.32; font-weight: 650; }
+    .day::before { content: "BUILD"; width: max-content; height: max-content; border: 1.5px solid var(--ink); border-radius: 4px; background: var(--green); padding: 2px 4px; font-size: 7px; line-height: 1.2; font-weight: 800; }
+    .day.learn-day::before { content: "LEARN"; background: var(--pink); }
+    .day.sat::before { content: "PLAN"; background: var(--yellow); }
+    .day.tue::before { content: "COACH"; background: var(--blue); }
+    .day.sat b, .day.tue b, .day.fri b { display: inline-block; width: max-content; padding: 2px 5px; border: 1.5px solid var(--ink); border-radius: 4px; }
+    .day.sat b { background: var(--yellow); } .day.tue b { background: var(--blue); } .day.fri b { background: var(--green); }
+    footer { margin-top: 20px; border-top: 4px solid var(--ink); padding-top: 15px; display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; }
+    .rhythm { display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .rhythm i { width: 23px; height: 23px; display: grid; place-items: center; border: 2px solid var(--ink); border-radius: 5px; font-style: normal; }
+    .rhythm i:nth-of-type(1) { background: var(--yellow); } .rhythm i:nth-of-type(2) { background: var(--pink); } .rhythm i:nth-of-type(3) { background: var(--blue); } .rhythm i:nth-of-type(4) { background: var(--green); }
+    .final-note { text-align: right; font-family: "Archivo Black"; font-size: 17px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="topline">
+    <div class="brand display"><span class="brand-mark"><i></i><i></i><i></i></span><span>My Real<br>Product</span></div>
+    <div class="name-pill">HI, RUTWIKA.</div>
+  </div>
+
+  <header>
+    <div>
+      <h1 class="display">4-Week AI Engineering<br>Training Plan</h1>
+      <p>Learn the foundations, add one powerful layer each week, and finish with one production-ready AI product you can confidently demo.</p>
+    </div>
+    <div class="promise"><b>WELCOME TO MYREALPRODUCT.</b><span>Learn, build and ship one capstone through four focused weekly releases.</span></div>
+  </header>
+
+  <section class="week-zero">
+    <div class="label"><span>BEFORE WE START</span><b>WEEK 0</b></div>
+    <div class="tasks">
+      <div class="task"><em>1</em>Join the WhatsApp group</div>
+      <div class="task"><em>2</em>Pick and understand a problem statement</div>
+      <div class="task"><em>3</em>Research existing solutions deeply</div>
+      <div class="task"><em>4</em>Submit your understanding report</div>
+      <div class="task"><em>5</em>Set up Python, Claude Code & GitHub</div>
+    </div>
+  </section>
+
+  <section class="weeks">
+    <article class="week">
+      <div class="week-head"><div class="num">01</div><div><small>Foundation</small><h2>Ship your AI app</h2><div class="outcome">Outcome: working MVP at a live URL</div></div></div>
+      <div class="learn"><b>Learn phase - 6 video lessons</b><div class="chips"><span class="chip">Claude Code</span><span class="chip">FastAPI</span><span class="chip">LangChain</span><span class="chip">Supabase</span><span class="chip">GitHub</span><span class="chip">Vercel</span></div></div>
+      <div class="days">
+        <div class="day sat"><b>Saturday</b><span>Plan session: intro, solution, MVP, input → process → output, product flowchart, Q&A + planning template.</span></div>
+        <div class="day learn-day"><b>Sunday</b><span>Learn Claude Code, FastAPI and LangChain.</span></div>
+        <div class="day learn-day"><b>Monday</b><span>Learn Supabase, GitHub and Vercel. Follow a guided product breakdown showing how the full stack fits together.</span></div>
+        <div class="day tue"><b>Tuesday</b><span>Office hours: ideate what to build, agree scope and architecture, unblock questions.</span></div>
+        <div class="day build-day"><b>Wednesday</b><span>Build: scaffold the app, API and first model flow.</span></div>
+        <div class="day build-day"><b>Thursday</b><span>Build: connect data, frontend and core product flow.</span></div>
+        <div class="day fri"><b>Friday</b><span>Build, deploy and submit by end of day.</span></div>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="week-head"><div class="num">02</div><div><small>Knowledge</small><h2>Ground it with RAG</h2><div class="outcome">Outcome: answers based on trusted source data</div></div></div>
+      <div class="learn"><b>Learn phase - 5 video lessons</b><div class="chips"><span class="chip">Intro to RAG</span><span class="chip">Vector Stores</span><span class="chip">Pinecone</span><span class="chip">Types of RAG</span><span class="chip">Advanced RAG</span></div></div>
+      <div class="days">
+        <div class="day sat"><b>Saturday</b><span>Plan session: RAG architecture, knowledge sources, retrieval quality, MVP upgrade and Q&A.</span></div>
+        <div class="day learn-day"><b>Sunday</b><span>Learn RAG foundations, embeddings, chunking and vector stores.</span></div>
+        <div class="day learn-day"><b>Monday</b><span>Learn Pinecone, RAG patterns and advanced retrieval through a complete guided RAG build.</span></div>
+        <div class="day tue"><b>Tuesday</b><span>Office hours: choose sources, chunking strategy, metadata and retrieval approach.</span></div>
+        <div class="day build-day"><b>Wednesday</b><span>Build: document ingestion, chunking and vector indexing.</span></div>
+        <div class="day build-day"><b>Thursday</b><span>Build: retrieval, grounded generation and citations.</span></div>
+        <div class="day fri"><b>Friday</b><span>Test retrieval quality, improve weak answers and submit by end of day.</span></div>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="week-head"><div class="num">03</div><div><small>Action</small><h2>Add an AI agent</h2><div class="outcome">Outcome: a reliable multi-step workflow</div></div></div>
+      <div class="learn"><b>Learn phase - 5 video lessons</b><div class="chips"><span class="chip">AI Agents</span><span class="chip">LangGraph</span><span class="chip">Tools</span><span class="chip">Graph Patterns</span><span class="chip">Advanced LangGraph</span></div></div>
+      <div class="days">
+        <div class="day sat"><b>Saturday</b><span>Plan session: agent goal, workflow, state, tools, safety boundaries and success criteria.</span></div>
+        <div class="day learn-day"><b>Sunday</b><span>Learn agent foundations, LangGraph basics and tool calling.</span></div>
+        <div class="day learn-day"><b>Monday</b><span>Learn graph patterns and advanced LangGraph through a complete guided agent workflow.</span></div>
+        <div class="day tue"><b>Tuesday</b><span>Office hours: map nodes, state, routing, tools and human approval points.</span></div>
+        <div class="day build-day"><b>Wednesday</b><span>Build: create the graph, state and first working path.</span></div>
+        <div class="day build-day"><b>Thursday</b><span>Build: add tools, routing, memory and failure handling.</span></div>
+        <div class="day fri"><b>Friday</b><span>Test complete workflows, record evidence and submit by end of day.</span></div>
+      </div>
+    </article>
+
+    <article class="week">
+      <div class="week-head"><div class="num">04</div><div><small>Production</small><h2>Make it reliable</h2><div class="outcome">Outcome: monitored, evaluated final release</div></div></div>
+      <div class="learn"><b>Learn phase - 5 video lessons</b><div class="chips"><span class="chip">Observability</span><span class="chip">Langfuse / LangSmith</span><span class="chip">Evaluations</span><span class="chip">LiteLLM</span><span class="chip">LLMOps</span></div></div>
+      <div class="days">
+        <div class="day sat"><b>Saturday</b><span>Plan session: production readiness, traces, eval criteria, cost, latency and final demo plan.</span></div>
+        <div class="day learn-day"><b>Sunday</b><span>Learn observability with Langfuse/LangSmith and practical evaluation methods.</span></div>
+        <div class="day learn-day"><b>Monday</b><span>Learn LiteLLM, prompt caching and prompt versioning through a guided production hardening walkthrough.</span></div>
+        <div class="day tue"><b>Tuesday</b><span>Office hours: define eval set, tracing plan, gateway setup and release checklist.</span></div>
+        <div class="day build-day"><b>Wednesday</b><span>Build: instrument traces, metrics and production logs.</span></div>
+        <div class="day build-day"><b>Thursday</b><span>Build: add evals, gateway, caching and prompt versions.</span></div>
+        <div class="day fri"><b>Friday</b><span>Final submission: live app, GitHub repo, demo, results and reflection.</span></div>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <div class="rhythm"><i>1</i>Plan <b>→</b> <i>2</i>Learn <b>→</b> <i>3</i>Office hours <b>→</b> <i>4</i>Build + submit</div>
+    <div class="final-note">Four releases.<br>One real product.</div>
+  </footer>
+</main>
+</body>
+</html>

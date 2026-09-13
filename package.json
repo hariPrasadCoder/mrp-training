@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -H 0.0.0.0",
+    "start": "node --env-file-if-exists=.env.local .next/standalone/server.js",
     "lint": "eslint .",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:data-flow": "node --import tsx scripts/verify-data-flow.ts",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push"
   },

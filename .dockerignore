@@ -5,3 +5,9 @@ node_modules
 npm-debug.log*
 product-plan.html
 Screenshot*.png
+artifacts
+output
+tmp
+docs
+*.md
+!README.md

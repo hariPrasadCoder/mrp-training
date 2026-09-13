@@ -4,23 +4,39 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { LogOut } from "lucide-react";
 import { authClient } from "@/lib/auth/client";
-import type { AdminWorkspaceData, LearnerWorkspaceData, LessonBlock, Role } from "@/lib/lms-types";
+import type {
+  AdminWorkspaceData,
+  LearnerWorkspaceData,
+  LessonBlock,
+  ProgramWeek,
+  Role,
+} from "@/lib/lms-types";
 import type { ScheduleSettings } from "@/lib/db/program-settings";
 import { LearnerApp, LearnerOnboarding } from "./learner-app";
 import { AdminApp } from "./admin-app";
 
-export function TrainingApp({ user, schedule: initialSchedule, canPersistAdminChanges, learner: initialLearner, content: initialContent, admin: initialAdmin }: {
+export function TrainingApp({
+  user,
+  schedule: initialSchedule,
+  canPersistAdminChanges,
+  learner: initialLearner,
+  content: initialContent,
+  programWeeks: initialProgramWeeks,
+  admin: initialAdmin,
+}: {
   user: { name: string; email: string; role: Role };
   schedule: ScheduleSettings;
   canPersistAdminChanges: boolean;
   learner: LearnerWorkspaceData | null;
   content: LessonBlock[];
+  programWeeks: ProgramWeek[];
   admin: AdminWorkspaceData | null;
 }) {
   const router = useRouter();
   const [learner, setLearner] = useState(initialLearner);
   const [schedule, setSchedule] = useState(initialSchedule);
   const [content, setContent] = useState(initialContent);
+  const [programWeeks, setProgramWeeks] = useState(initialProgramWeeks);
   const [admin, setAdmin] = useState(initialAdmin);
 
   async function signOut() {
@@ -30,21 +46,92 @@ export function TrainingApp({ user, schedule: initialSchedule, canPersistAdminCh
   }
 
   if (user.role === "learner" && learner && !learner.onboardingComplete) {
-    return <LearnerOnboarding user={user} learner={learner} onComplete={(profile) => setLearner({ ...learner, ...profile, onboardingComplete: true, completedChecklist: [...new Set([...learner.completedChecklist, "profile"])] })} onSignOut={signOut} />;
+    return (
+      <LearnerOnboarding
+        user={user}
+        learner={learner}
+        onComplete={(profile) =>
+          setLearner({
+            ...learner,
+            ...profile,
+            onboardingComplete: true,
+            status: "active",
+            completedChecklist: [
+              ...new Set([...learner.completedChecklist, "profile"]),
+            ],
+          })
+        }
+        onSignOut={signOut}
+      />
+    );
   }
 
-  return <main className="app-shell">
-    <header className="topbar">
-      <div className="brand"><span className="brand-mark"><span /><span /><span /></span><span>MYREAL<br />PRODUCT</span></div>
-      <span className="learner-badge">{user.role === "learner" ? "Learner workspace" : "Coach workspace"}</span>
-      <div className="top-actions"><span className="signed-in-as">{user.name}</span><button className="icon-button" aria-label="Sign out" onClick={signOut}><LogOut size={18} /></button><div className="avatar">{initials(user.name)}</div></div>
-    </header>
-    {user.role === "learner" && learner
-      ? <LearnerApp user={user} learner={learner} setLearner={setLearner} schedule={schedule} content={content} />
-      : admin && <AdminApp admin={admin} setAdmin={setAdmin} schedule={schedule} setSchedule={setSchedule} content={content} setContent={setContent} canSave={canPersistAdminChanges} />}
-  </main>;
+  return (
+    <main className="app-shell">
+      <header className="topbar">
+        <div className="brand">
+          <span className="brand-mark">
+            <span />
+            <span />
+            <span />
+          </span>
+          <span>
+            MYREAL
+            <br />
+            PRODUCT
+          </span>
+        </div>
+        <span className="learner-badge">
+          {user.role === "learner" ? "Learner workspace" : "Coach workspace"}
+        </span>
+        <div className="top-actions">
+          <span className="signed-in-as">{user.name}</span>
+          <button
+            className="icon-button"
+            aria-label="Sign out"
+            onClick={signOut}
+          >
+            <LogOut size={18} />
+          </button>
+          <div className="avatar">{initials(user.name)}</div>
+        </div>
+      </header>
+      {user.role === "learner" && learner ? (
+        <LearnerApp
+          user={user}
+          learner={learner}
+          setLearner={setLearner}
+          schedule={schedule}
+          content={content}
+          weeks={programWeeks}
+        />
+      ) : (
+        admin && (
+          <AdminApp
+            admin={admin}
+            setAdmin={setAdmin}
+            schedule={schedule}
+            setSchedule={setSchedule}
+            content={content}
+            setContent={setContent}
+            weeks={programWeeks}
+            setWeeks={setProgramWeeks}
+            canSave={canPersistAdminChanges}
+          />
+        )
+      )}
+    </main>
+  );
 }
 
 export function initials(name: string) {
-  return name.split(/\s+/).filter(Boolean).map((part) => part[0]).join("").slice(0, 2).toUpperCase() || "MR";
+  return (
+    name
+      .split(/\s+/)
+      .filter(Boolean)
+      .map((part) => part[0])
+      .join("")
+      .slice(0, 2)
+      .toUpperCase() || "MR"
+  );
 }

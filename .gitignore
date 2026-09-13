@@ -2,5 +2,6 @@ node_modules
 .next
 .env
 .env.local
+/coolify.env
 *.log
 .DS_Store

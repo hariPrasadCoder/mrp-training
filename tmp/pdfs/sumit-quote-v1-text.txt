@@ -1,0 +1,134 @@
+       MY REAL
+       PRODUCT                                                                                                                    HI, SUMIT.
+
+
+
+
+AI ENGINEERING
+COACHING OPTIONS                                                                                             4 WEEKS. 1:1.
+                                                                                                             BUILD. REVIEW. SHIP.
+
+Choose the learning path that matches the depth of guidance you want. Both options are                       A focused engagement built around
+                                                                                                             one capstone.
+delivered one-to-one and lead to one demonstrable AI product.
+
+
+
+
+   OPTION 01 / STANDARD                                                     OPTION 02 / ADVANCED
+
+
+   AI PRODUCT BUILDER                                                       ADVANCED AI ENGINEERING
+   $2,000                                       4-WEEK PROGRAMME            $3,000                                              RECOMMENDED
+
+
+
+
+   THE PROVEN ONE-TO-ONE BUILD PATH                                         EVERYTHING IN OPTION 01, PLUS
+
+      Four weekly Saturday coaching sessions                                   A learning path adapted to your existing experience
+
+      Weekly one-to-one office hours                                           Three additional 60-minute advanced sessions
+
+      Recorded lessons and implementation resources                            Advanced RAG, retrieval evaluation and reranking
+
+      Build an AI app, add RAG, create a LangGraph agent                       Advanced LangGraph and reliable agent architecture
+
+      Add evaluations, observability and production checks                     Production AI engineering, evaluations and LLMOps
+
+      One production-oriented capstone and final review                        Curated technical references and next-step roadmap
+
+      Standard MyRealProduct curriculum and sequence                           Deeper architecture and code feedback on your capstone
+
+
+
+
+     BEST FOR                                                                 BEST FOR
+
+     A structured journey through the complete AI product                     An experienced data professional ready to self-build with
+     lifecycle.                                                               senior guidance.
+
+
+
+
+   OUR RECOMMENDATION
+   Based on your existing RAG and agent experience, Option 02 avoids repeating familiar foundations and adds focused depth where it
+   matters: retrieval quality, LangGraph architecture and production reliability.
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                                PAGE 1 OF 2
+        MY REAL
+        PRODUCT                                                                                                                         OPTION 02 / $3,000
+
+
+
+
+THE ADVANCED TRACK
+A COACHING-LED ROUTE FROM WORKING AI FEATURES TO RELIABLE AI SYSTEMS.
+
+
+
+
+               FRAME                                                                                    RETRIEVE
+
+     01        PRODUCT BASELINE                                                               02        ADVANCED RAG
+   Validate the capstone, architecture and success criteria. Use the standard               Build beyond basic vector search: retrieval failure analysis, chunking,
+   material selectively and establish the baseline you will improve.                        hybrid search, query transformation, reranking and evaluation.
+
+
+
+
+                                                                                              ADVANCED SESSION                                                 60 MIN
+
+
+
+
+               ORCHESTRATE                                                                              MEASURE
+
+     03        RELIABLE AGENTS                                                                04        PRODUCTION AI
+   Design stateful LangGraph workflows with routing, tools, retries, fallbacks,             Add eval datasets, tracing, prompt and model versioning, cost and latency
+   memory and human approval where the use case requires them.                              controls, guardrails and a production-readiness review.
+
+
+
+
+     ADVANCED SESSION                                                60 MIN                   ADVANCED SESSION                                                 60 MIN
+
+
+
+
+   WHAT MYREALPRODUCT PROVIDES                                                             WHAT YOU WILL DO
+
+      Conceptual instruction and architecture walkthroughs                                     Complete the selected material between sessions
+
+      A focused learning path and curated references                                           Implement and test the project independently
+
+      Implementation guidance and feedback on your work                                        Bring decisions, blockers and evidence for review
+
+      Accountability toward one completed capstone                                             Submit the final repository, demo and evaluation results
+
+
+
+
+   COACHING SCOPE
+   The Advanced Track provides instruction, architecture guidance, implementation direction and feedback. You will build the solution between
+   sessions. Extended pair-programming, bespoke lesson development, or implementation of the project by MyRealProduct is not included.
+
+
+
+   Need intensive instruction or implementation support?           We can scope and price a separate engagement based on the required support.
+
+
+
+
+   NEXT STEP
+   Select Option 01 or Option 02 to confirm your four-week coaching track.
+   Programme dates and payment details will be confirmed upon acceptance.
+
+
+
+
+MYREALPRODUCT / PRIVATE COACHING PROPOSAL                                                                                                                       PAGE 2 OF 2
+
